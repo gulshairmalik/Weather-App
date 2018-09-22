@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+         <meta charset="UTF-8">
+		 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+		 <link rel="stylesheet" href="style.css">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body onload="getLocation()">
+        <div class="container">
+            <div class="login-wrap">
+                <div class="login-html text-center">
+                  <h1 class="text-primary" style="color:white !important;">Local Weather App</h1>
+                   <div style="margin-top: 100px; font-size:25px;" class="row">
+                    <div class="col-md-6"><img src="" id="icon" class="img img-responsive center-block"><p id="desc" class="myFont text-primary"></p></div>
+                    <div class="col-md-6"><p id="temp" class="myFont text-primary"></p>
+                    <p id="loc" class="myFont text-primary"></p>
+                    <button class="btn btn-success center-block" id="cel" style="border-radius:25px; outline: none;">Fahrenheit</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="json.js"></script>
+    </body>
+</html>
